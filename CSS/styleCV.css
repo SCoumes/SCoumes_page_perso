@@ -1,0 +1,21 @@
+/* CSS for cv */
+
+#CVCont a {
+  text-align: center;
+  text-decoration: none;
+}
+
+#resu_dl {
+  display: block;
+  height: 30px;
+  width: 200px;
+  margin-left: 0px;
+  border-style: solid;
+  border-color: gray;
+}
+
+#resu_dl a {
+  display: bloc;
+  position: relative;
+  top: -15px;
+}

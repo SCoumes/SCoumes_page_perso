@@ -1,0 +1,39 @@
+/* CSS for the Header */
+body {
+  margin: 0px;
+  background-color: black;
+  overflow: hidden;
+}
+
+a.HeaderLink {
+  display:block;
+  height: 100vh;
+  width: 130px;
+  max-width: 25%;
+  float: left;
+
+  border-right: 2px solid white;
+
+  color: white;
+  text-align: center;
+  text-decoration: none;
+
+}
+
+a.HeaderLink:hover {
+  color: black;
+  background-color: white;
+}
+
+a.HeaderLink  p {
+  padding-top: 5px;
+  color: inherit;
+}
+
+a.HeaderLang {
+  display:block;
+  height: 100%;
+
+  position: absolute;
+  right: 5px;
+}

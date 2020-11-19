@@ -1,0 +1,13 @@
+/* CSS for PW */
+
+.MainContainer {
+  padding: 5px;
+}
+
+ul {
+  padding-left: 25px;
+}
+
+li:nth-child(even) {
+  background-color: lightgrey;
+}

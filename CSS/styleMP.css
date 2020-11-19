@@ -1,0 +1,18 @@
+/* CSS for Homepage */
+
+#HomeLeft {
+  width: 350px;
+  max-width: 33%;
+  display: block;
+  float: left;
+  overflow: auto;
+  text-align: center;
+}
+
+
+#HomeRight {
+  width: 66%;
+  display: block;
+  float: left;
+  overflow: auto;
+}
