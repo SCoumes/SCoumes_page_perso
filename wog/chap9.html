@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Simon Coumes" />
+  <title>A collection of wogian thoughts</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      word-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h1 id="ChapDoubtApproach">Interlude : isn’t there something wrong with my models ?</h1>
+<div class="tcolorbox">
+<p>This chapter is a discussion on the paradigm of chapters <a href="#ChapTruth" data-reference-type="ref" data-reference="ChapTruth">2</a> and <a href="#ChapHumanMind" data-reference-type="ref" data-reference="ChapHumanMind">9</a>.<br />
+The point is however more general and reading chapters <a href="#ChapTruth" data-reference-type="ref" data-reference="ChapTruth">2</a> and <a href="#ChapHumanMind" data-reference-type="ref" data-reference="ChapHumanMind">9</a> is not required. Still, they will be mentioned.<br />
+Estimated need for active reading: <span class="math inline"> ⋆ ⋆</span></p>
+</div>
+<p>In this short(ish) chapter, I will discuss an issue that one might see with the models offered in chapters <a href="#ChapTruth" data-reference-type="ref" data-reference="ChapTruth">2</a> and <a href="#ChapHumanMind" data-reference-type="ref" data-reference="ChapHumanMind">9</a>. The issue is that the models don’t seem to match the criteria for a testable scientific theory. If what I affirm can’t be tested, then how do I know it’s not just nonsense ? How do I know I am not making the same mistakes as past philosophers whose theories now seem stupid, absurd, or ill thought <a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a> ? I have some reasons to believe my approach justified and good, but first I must talk about what makes me think there might be a problem.<br />
+The first thing to note is that the models presented in chapters <a href="#ChapTruth" data-reference-type="ref" data-reference="ChapTruth">2</a> and <a href="#ChapHumanMind" data-reference-type="ref" data-reference="ChapHumanMind">9</a> are not meant to be instantiated. What do I mean by that ? I mean that normally a model offers a description of the properties the objects at hand can have and of the rules they obey. Instances can then be created by deciding on certain specific objects and parameter values.<br />
+Think for example of Newtonian mechanic. It is a model of the way solid objects move under certain circumstances. The model describes its objects (solids), the parameters that can fluctuate for each object (size, shape, mass, ...) and the rules describing the system’s evolution. You can then consider an instance of the model by listing objects and parameter values. <a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a><br />
+The models I presented earlier aren’t like that. How so ?<br />
+Well first they are very complicated. If you wanted to give a mathematical description of a proper instance you would need a very long description, more than is practical <a href="#fn12" class="footnote-ref" id="fnref12" role="doc-noteref"><sup>12</sup></a> . But even beyond the size issue, there is a vagueness issue. The model is not mathematically complete. One could say it is intuition based or simply meaningless to some extend. In any case, any instance of either of these models would have to be an instance of another given model that matches the vague description of the model given in this document. I suppose you could say that my models are in fact meta-models, but let’s no go down that path right now.</p>
+<p>So because of the vagueness you can’t really test my models, the models don’t lend themselves to concrete prediction, and because of the complexity I don’t expect anyone to ever turn them into something more suited to predictions (math).<br />
+Is that a problem ? It sounds like a problem. The topics at hand lend themselves to making vacuous statements and pointless-but-witty-sounding broad claims. What is the point of my models if they don’t make predictions ? Aren’t they just meaningless statements with no link with reality, easily replaced with another variant ?</p>
+<p>And how do I know they are "right" if I can’t test them ? What reasons to favor them do I have except that I like them ?<br />
+We will get to these questions in a bit. But before I have something else to point out in my defense: you need to something in your mind that plays the role of my models. Or at least you probably do. If you think in a way that is at least somewhat compatible with contemporary western culture then you need to have an idea of how people think. You might not use a very clear or precise description of what a mind is. You might not think it in great abstraction. But if people stop in the middle of a normal sentence to scream gibberish at the top of their lungs you are surprised. <a href="#fn13" class="footnote-ref" id="fnref13" role="doc-noteref"><sup>13</sup></a> Similarly you can speak of "parts" of a mind, or a similar notion. Perhaps you use words such as "the subconscious" or "emotion". You have models.</p>
+<p>Similarly, you certainly use ideas. <a href="#fn14" class="footnote-ref" id="fnref14" role="doc-noteref"><sup>14</sup></a> You make statements and are capable of recognizing that "cat" means something but some strings of characters do not. You have at least to some extent a model of truth and of ideas/concepts in your mind.<br />
+Well I just tried to clarify and improve these models. I wanted to understand mines and I wanted to have access to them in greater abstraction. A part of the goal is simply to understand my way to think better, even if that means modifying a part of it in the process. Beyond the gain I believe can be achieved by improving on our base models for these things, I see virtue in having access to clearer abstract versions of them. Indeed, this should help discussions that come near these topics stay meaningful. Stating clearly the ground level models and considerations is supposed to help in discussing higher level topics.<br />
+Also I wanted to replace and clarify the models I use within my mind, not to obtain perfect mathematical models. There are two great advantages to this approach: the goal is feasible and the result is of direct use in my other reflections. It also gives some limitations, notably with respect to complexity. Hence why my model of the mind doesn’t simply point at the best current theories of neuroscience. The goal is to give a framework for the expression of other considerations <a href="#fn15" class="footnote-ref" id="fnref15" role="doc-noteref"><sup>15</sup></a> as well as to give shape to basic intuition.<br />
+Another defense <a href="#fn16" class="footnote-ref" id="fnref16" role="doc-noteref"><sup>16</sup></a> -more suited to my model of the human mind than the one of truth- is linked with the notion of Turing completeness. If you don’t know what Turing completeness is then kindly skip this paragraph. The point isn’t important enough to warrant an explanation. And the point is simple too. My model is Turing complete (when assuming infinite memory), just like every model of the human mind operating at the same level as mine has to be. Hence a reduced ability to make prediction regarding the possible outside behaviors, the models are all equivalents !<br />
+Ok so you have to do what I did to some extent, or at least you use by default something that is similar in nature to my results. And I have great excuses to justify my approach. But still the point remains, a model that doesn’t tell us what or how to think at least in some situations is pointless. So what is happening ? And also, why do I favor my models, what reasons do I have to think them good ?<br />
+A great part of the answer is this: these models are frameworks for intuition and other statements and are incomplete if you restrain yourself to the abstractions given. Instead, a part of of how things work remain in the user’s intuition. You can’t always replace all the names given for parts of the models with placeholders and expect everything to keep working.</p>
+<p>When used as intended, they are supposed to help produce sub-theories and guide intuition. Through these means, they actually help produce statements about what to expect in reality and how to think.<br />
+Ok. What about the reasons to like these models ?<br />
+In a way, I would say my approach is meant to be judged in a similar way to the way you would judge a classification of living beings. Such classifications can be wrong in the purest sense of "false" (for example you might classify according to the number of bones and not provide a category for things that have none). But sometimes you can eliminate the possibility to be wrong (just create a "others" category at each step and be done with it). An yet the classification can still be rejected. It can still be bad. It’s about being a good guide to intuition. Being a satisfying framework within which other considerations are easily and conveniently expressed.<br />
+So here is how I stick my neck out when I offer my models. <a href="#fn17" class="footnote-ref" id="fnref17" role="doc-noteref"><sup>17</sup></a> Here is the test against which I tried my other ideas until I found the ones I presented, the ones I didn’t managed to get to fail. Here is my prediction: these models are good frameworks to think in about the matters considered.<br />
+Annoyingly, it is not enough to find some cases in which my models misguide intuition. It’s about being good in most situations, not about being beyond failure. It’s like choosing a good coding language or more generally a good tool. Thought it might still be possible to prove with just one example that I am after all simply wrong.</p>
+<section class="footnotes" role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn10" role="doc-endnote"><p>Let’s give three examples. The four elements theory, the theory of phlogistons, the theory of humors.<a href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn11" role="doc-endnote"><p>In the case of Newtonian physics you mostly do so by describing an "initial state", but that isn’t the case for all kinds of models. Notably, the notion of "initial state" doesn’t play nice with all conceptions of time.<a href="#fnref11" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn12" role="doc-endnote"><p>In the case of the model of truth and meaning, you would encounter problems with infinity and recursivity. For the mathematically inclined: it’s not well founded and requires a set bigger than <span class="math inline">ℝ</span><a href="#fnref12" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn13" role="doc-endnote"><p>I know I am using predictions to justify the presence of models after I sort of implied that my models aren’t predictive. Please be patient, the question should feel resolved a few paragraphs bellow.<a href="#fnref13" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn14" role="doc-endnote"><p>If not then please contact me as I always wanted to make the acquaintance of an elder god. Other gods may still apply.<a href="#fnref14" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn15" role="doc-endnote"><p>Perhaps I should clarify that point. The idea is that the models serve as a base and a context in which to produce statements on the systems at hand. For example, the rules of logic are statements within the framework that is my theory of kirkins.<a href="#fnref15" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn16" role="doc-endnote"><p>Because yes, I am aware I sound like I am trying to defend myself. Rest assured that I am aware of the tendency to defend one’s mistake and have tried to actually question my approach.<a href="#fnref16" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn17" role="doc-endnote"><p>In the sens that I am taking the risk to be shown to be wrong<a href="#fnref17" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+</body>
+</html>

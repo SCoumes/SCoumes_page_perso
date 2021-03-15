@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Simon Coumes" />
+  <title>A collection of wogian thoughts</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      word-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h1 id="ChapTruthObjects">Truth : mathematical objects</h1>
+<div class="tcolorbox">
+<p>This chapter is a part of the string of chapters describing the theory of truth based on kirkins. They are meant to be read linearly. If you have not already, read chapter <a href="#ChapTruthEntry" data-reference-type="ref" data-reference="ChapTruthEntry">[ChapTruthEntry]</a> first.</p>
+<p>This chapter admits the following requirements :</p>
+<ul>
+<li><p>A general notion of the use of set theory based notations, including the use of functions and Cartesian products.</p></li>
+<li><p>The notion of poset (partially ordered set), a quick google search should suffice.</p></li>
+<li><p>The notion of lattice, skimming the wikipedia page should be enough.</p></li>
+</ul>
+<p>Estimated need for active reading: <span class="math inline"> ⋆  ⋆  ⋆  ⋆ ⋆</span></p>
+</div>
+<p>In this chapter I list the base objects that are used in the theory of kirkins. When appropriate, mathematical notations are introduced by borrowing from the standard ZFC set theory.</p>
+<h2 id="a-first-list-of-objects">A first list of objects</h2>
+<p>We define a number of objects.</p>
+<div class="defi">
+<p><strong>Definition 3.1</strong> (The basis).  <em>There are two basis in the model.<br />
+<strong>The basis of dirt</strong> is the object that represents (or indeed, "is") reality. No matter what can be said to exist outside of concepts/ideas, this is it.<br />
+<strong>The basis of truth</strong> represents the fundamental nature of truth. It is, to a rather large extent, what the theory of kirkins tries to describe.<br />
+They are respectively noted <span class="math inline">▫<sub><em>d</em><em>i</em><em>r</em><em>t</em></sub></span> and <span class="math inline">▫<sub><em>t</em><em>r</em><em>u</em><em>t</em><em>h</em></sub></span>.</em></p>
+</div>
+<div class="defi">
+<p><strong>Definition 3.2</strong> (kirkin).  <em>A <strong>kirkin</strong> is a base object, intuitively it is close to the notion of "concept" or "idea". <a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> The set of all kirkins is noted <span class="math inline"><em>Ω</em></span>.</em></p>
+</div>
+<p>In much of what follows in this section, we will introduce various subsets of <span class="math inline"><em>Ω</em></span>, around which we will build our description of truth and meaning.</p>
+<div class="defi">
+<p><strong>Definition 3.3</strong> (evaluable kirkins).  <em><strong>The set of evaluable kirkins</strong> is a subset of the set of kirkins. It is noted <span class="math inline"><em>Ė</em></span>.</em></p>
+</div>
+<div class="defi">
+<p><strong>Definition 3.4</strong> (statements).  <em><strong>The set of statements</strong> is a subset of the set of kirkins. It is noted <span class="math inline"><em>Ṡ</em></span>. This is the set that contains "affirmations".</em></p>
+</div>
+<p>As we will soon see, elements of <span class="math inline"><em>Ė</em> ∩ <em>Ṡ</em></span> are the only elements for which the concept of "true" is applicable.</p>
+<p>To measure degrees of truth and meaningfulness, we introduce a lattice.</p>
+<div class="defi">
+<p><strong>Definition 3.5</strong>.  <em><strong><span class="math inline">(<em>L̇</em>,  &lt; )</span></strong> is an infinite bounded lattice (in the sens of posets). Its two extremal elements are noted <span class="math inline">⊥</span> and <span class="math inline">⊤</span>, as is usual. Additionally, we require the existence of an infinite strictly increasing series of elements between any pair of comparable elements of <span class="math inline"><em>L̇</em></span>. The min-max and max-min operators are respectively noted <span class="math inline">∧</span> and <span class="math inline">∨</span>.</em></p>
+</div>
+<p>It might be worthwhile to define <span class="math inline"><em>L̇</em></span> more precisely in terms of usual mathematical objects. I have however to this point found no specification that seemed a fundamentally better fit than any other. Hence, I leave the choice open for now.<br />
+We can now define the two functions that effectively define truth and meaningfulness.</p>
+<div id="defTruthM" class="defi">
+<p><strong>Definition 3.6</strong>.  <em><strong><span class="math inline"><em>M̃</em></span></strong> is a function from <span class="math inline"><em>Ė</em></span> to <span class="math inline"><em>L̇</em></span>. It indicates how meaningful an evaluable kirkin is.</em></p>
+</div>
+<div id="defTruthT" class="defi">
+<p><strong>Definition 3.7</strong>.  <em><strong><span class="math inline"><em>T̃</em></span></strong> is a function from <span class="math inline"><em>Ė</em> ∩ <em>Ṡ</em></span> to <span class="math inline"><em>L̇</em></span>. It indicates how true an evaluable statement is.</em></p>
+</div>
+<h2 id="kirkinplexes-binding-symbols-binding-contexts">Kirkinplexes, binding symbols, binding contexts</h2>
+<p>Kirkinplexes are a special type of kirkin that I introduce to represent the idea that humans often think in a given context which helps give meaning to our ideas.<br />
+Let’s work on an example. "Bishop to E5". What does that mean ? Well I would say the idea requires its context. Of course most people familiar with it think of the well known game of chess. The game has rules and when you know them they give meaning to notions such as "bishop to E5", which would otherwise be meaningless. In the vocabulary I will introduce in this chapter, one says that the idea "bishop to E5" was bound to the kirkinplex "the rules of chess".<br />
+Kirkinplexes are "mental context" representations. <a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> Often, we can simply call them models. And when a kirkinplex is a model it can sometimes be a model of another kirkinplex. We might say that the usual notions of "table" and "chair" operate within a general model (one that contains objects everyday furniture) that is a modelization of another model (one with notions such as "atoms" and "photon") which is itself a model of reality.</p>
+<p>This process and others create piles of models or even more complex arrangements of models (or more generally kirkinplexes). I represent this using graphs through the notion of binding context. Together with kirkinplexes they help give meaning to kirkins. As for the binding symbols, they are simply a useful part of the construction.<br />
+Both the modification of binding contexts and the operation of giving meaning to a particular kirkin are "binding operations". The first is called "context extension" and the second "kirkin realization".</p>
+<div id="defTruthKirkinplex" class="defi">
+<p><strong>Definition 3.8</strong> (kirkinplex).  <em>A <strong>kirkinplex</strong> is a special kind of kirkin. It defines a set of accepted kirkins, which can each be evaluable or not, and a way to bind those kirkins. The set of kirkinplexes is noted <span class="math inline"><em>κ̇</em></span>.<br />
+To simplify the future formalism, the basis are considered as elements of <span class="math inline"><em>κ̇</em></span>.</em></p>
+</div>
+<div class="defi">
+<p><strong>Definition 3.9</strong> (Binding symbol).  <em>A binding symbol represents a way to link a kirkinplex in a binding context. This is easier to understand in the case of models, for which the biding symbol is a representation of how the model is supposed to describe another kirkinplex. However, a binding symbol can perfectly well indicate that a kirkinplex is an arbitrary addition.<br />
+The set of all binding symbols is written <span class="math inline"><em>Ḃ</em></span>.</em></p>
+</div>
+<div class="defi">
+<p><strong>Definition 3.10</strong> (Binding context).  <em>A binding context is a 2 coloriable DAG <a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> in which the nodes of the first color of nodes are either kirkinplexes or one of the basis and those of the second color are binding symbols. Each root of the context is a kirkinplex or a basis (basis of truth or basis of dirt).<br />
+The set of all binding contexts is written <span class="math inline"><em>Ċ</em></span>. The empty binding context is written <span class="math inline"><em>C</em><sub>0</sub></span>.</em></p>
+</div>
+<h2 id="binding-functions">Binding functions</h2>
+<p>The binding operations are performed through two functions, of which I now give the signatures along with some explanations.</p>
+<div class="defi">
+<p><strong>Definition 3.11</strong> (Context extension <span class="math inline"><em>υ̃</em></span>).  <em>The function <span class="math inline"><em>υ̃</em></span> is a restriction of a function from <span class="math inline"><em>κ̇</em> × <em>κ̇</em>[<em>X</em>] × <em>Ċ</em> × <em>Ḃ</em></span> to <span class="math inline">(<em>Ė</em> ∩ <em>Ṡ</em>)<sup>2</sup> × <em>Ċ</em></span>. <a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a><br />
+It is called the "context extension function" and serves to add a kirkinplex to a binding context. Read bellow for more information.</em></p>
+</div>
+<p>The function <span class="math inline"><em>υ̃</em></span> takes multiple elements as its input. Let’s go over them in order.</p>
+<ol>
+<li><p>A kirkinplex which we will add to the binding context</p></li>
+<li><p>A tuple of kirkinplexes to which the previous items will be connected in the binding context we will produce. These must belong to the binding context we use in the input.</p></li>
+<li><p>A binding context containing all elements of the previous item.</p></li>
+<li><p>A binding symbol.</p></li>
+</ol>
+<p>This function performs the first kind of binding : binding a kirkinplex to a binding context to extend it.</p>
+<p>The function outputs a tuple containing three elements. The first two are evaluations of "how good the binding is" whereas the third is the actual product of the binding, the extended binding context.</p>
+<ol>
+<li><p>The first output is a statement that represents the notion that the new kirkinplex (the first input) added can indeed be bound as described to the other kirkinplexes listed as input.</p></li>
+<li><p>The second is a statement that represents the notion that the new kirkinplex (the first input) added can indeed be bound as described to the binding context as a whole. So contrary to the first item, this is about how well the new kirkinplex merges with the whole context.</p></li>
+<li><p>The third element is a new binding context corresponding to the old one (third input) with the following additions :</p>
+<ul>
+<li><p>There are two new nodes. One is the input binding symbol and the other is the input kirkinplex (first input).</p></li>
+<li><p>All the kirkinplexes from the second input are linked by an edge to the binding symbol.</p></li>
+<li><p>The binding symbol is linked by an edge to the new kirkinplex.</p></li>
+</ul></li>
+</ol>
+<p>To facilitate writing we introduce the functions <span class="math inline"><em>υ̃</em><sub>1</sub></span>, <span class="math inline"><em>υ̃</em><sub>2</sub></span>, and <span class="math inline"><em>υ̃</em><sub>3</sub></span> such that<br />
+<span class="math inline"><em>υ̃</em>(<em>a</em>, <em>b</em>, <em>c</em>, <em>d</em>)</span> = <span class="math inline">(<em>υ̃</em><sub>1</sub>(<em>a</em>, <em>b</em>, <em>c</em>, <em>d</em>)</span>, <span class="math inline"><em>υ̃</em><sub>2</sub>(<em>a</em>, <em>b</em>, <em>c</em>, <em>d</em>)</span>, <span class="math inline"><em>υ̃</em><sub>3</sub>(<em>a</em>, <em>b</em>, <em>c</em>, <em>d</em>))</span>.</p>
+<p>Also, the last input is ignored if the second input is the empty tuple. In that case, we simply do not add a binding symbol to the graph (the kirkinplex is correctly added though).</p>
+<div class="defi">
+<p><strong>Definition 3.12</strong> (Realization function <span class="math inline"><em>Δ̃</em></span>).  <em>The function <span class="math inline"><em>Δ̃</em></span> is a restriction of a function from <span class="math inline"><em>Ω</em> × <em>κ̇</em> × <em>Ċ</em></span> to <span class="math inline"><em>Ė</em></span>. This produces an interpretation of the given kirkin "in absolute" through the kirkinplex and the binding context.<br />
+Whenever the first argument is in <span class="math inline"><em>Ṡ</em></span>, so is the result.</em></p>
+</div>
+<p>This function performs the second kind of binding : binding a kirkin to a kirkinplex in a given context to produce an evaluable kirkin.</p>
+<p>Because the signature of this function is much simpler than the previous one there is no need to go over each argument as before. However, I do want to point out that the input kirkinplex should be contained within the input binding context. There is a singular exception, we can bind using the empty context as if it contained only the input kirkinplex.<br />
+I realize that at this point the use of all these pseudo-mathematical notions might not be very clear. Chapter <a href="#ChapTruthBinding" data-reference-type="ref" data-reference="ChapTruthBinding">5</a> should help understand how binding works and the point of all this. In the mean time, I recommend to simply try to get a good idea of the core notions presented above.</p>
+<section class="footnotes" role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn2" role="doc-endnote"><p><em>The word idea is used to shape intuition here, but it will get a different meaning later in this document.</em><a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3" role="doc-endnote"><p>Again, this line is only here to shape intuition. Kirkins and kirkinplexes are not dependent on minds in the model.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4" role="doc-endnote"><p><em>Directed Acyclic Graph</em><a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5" role="doc-endnote"><p><em>Here the notation <span class="math inline"><em>κ̇</em>[<em>X</em>]</span> uses the definition of polynomes as stationary series to consider the set of polynomes in <span class="math inline"><em>κ̇</em></span> equivalent to that of tuples of elements of <span class="math inline"><em>κ̇</em></span>. This is a bit abusive as <span class="math inline"><em>κ̇</em></span> is not a body. Anyway, simply remember that the notation means "the tuples of elements of <span class="math inline"><em>κ̇</em></span>."</em><a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+</body>
+</html>

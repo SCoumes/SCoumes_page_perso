@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Simon Coumes" />
+  <title>A collection of wogian thoughts</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      word-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h1 id="ChapTruthBinding">Truth : let’s talk about binding</h1>
+<div class="tcolorbox">
+<p>This chapter is a part of the string of chapters describing the theory of truth based on kirkins. They are meant to be read linearly. If you have not already, read chapter <a href="#ChapTruthEntry" data-reference-type="ref" data-reference="ChapTruthEntry">[ChapTruthEntry]</a> first.</p>
+<p>Estimated need for active reading: <span class="math inline"> ⋆ ⋆</span></p>
+</div>
+<p>In this chapter, I will attempt to clarify the notion of binding and the use of kirkinplexes and binding contexts. After a brief general explanation, this will be done by a mix of explanations and illustrations in the following sections.</p>
+<p>Keep in mind that kirkins are fundamental bearers of meaning and roughly correspond to the general idea of "idea". In fact (and this is a spoiler for chapter <a href="#ChapHumanMind" data-reference-type="ref" data-reference="ChapHumanMind">9</a>), ideas are the correspondents of kirkins within human minds.<br />
+The idea behind the presentations of kirkinplexes and binding contexts is to have a way to represent the structure behind the interpretation of ideas. Some ideas require a context or implicitly refer to one, and so kirkins have kirkinplexes that give them meaning. Likewise, the context for an idea is often itself a complex mental construct <a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a> , which motivates the introduction of binding contexts. Producing contexts through incremental binding of kirkinplexes and realizing kirkins using these contexts is done with functions. In a way, you reduce the final evaluable kirkin to a series of applications of functions. But these are still just functions. They output a result but the result does no bear the mark of the construction. Notably, there can perfectly well exist several constructions for a single final evaluable kirkin.</p>
+<h2 id="adding-kirkinplexes">Adding kirkinplexes</h2>
+<p>The simplest use of kirkinplexes to understand is certainly the use of a kirkinplex to "model reality". We first consider a graph that only contains a single element, the basis of dirt. This is done by adding the basis of dirt to the empty binding context <span class="math inline"><em>C</em><sub>0</sub></span>.</p>
+<p>We then add a kirkinplex <span class="math inline"><em>k</em><sub>1</sub></span> to our binding context to describe "reality". This require a binding symbol <span class="math inline"><em>b</em><sub>1</sub></span>, which is a "modelization" symbol.</p>
+<p>Let’s say <span class="math inline"><em>k</em><sub>1</sub></span> gave us a complete model of reality reaching human concepts in one fell swoop. Notably, let’s say we have access within <span class="math inline"><em>k</em><sub>1</sub></span> to concepts such as "building" and "size". We might add a kirkinplex <span class="math inline"><em>k</em><sub>2</sub></span> to the previous context that simply gives meaning to kirkins such as "a building over 100m is a skyscraper". We also add another kirkinplex <span class="math inline"><em>k</em><sub>3</sub></span> as an union of <span class="math inline"><em>k</em>1</span> and <span class="math inline"><em>k</em><sub>2</sub></span>.</p>
+<p>Please note that if we were to look at the construction of <span class="math inline"><em>k</em><sub>2</sub></span> it would certainly itself require a context containing <span class="math inline"><em>k</em><sub>1</sub></span> or another similar kirkinplex. This is not apparent in the graph, because the objects do not reflect their construction. Also, notice that <span class="math inline"><em>k</em><sub>2</sub></span> is not linked with <span class="math inline">▫<sub><em>d</em><em>i</em><em>r</em><em>t</em></sub></span>. It is not a description of reality.<br />
+This last point becomes important when we notice that if we have kirkins that only require <span class="math inline"><em>k</em><sub>2</sub></span> to be bound, we can remove the basis of dirt. of course, this implies to also remove everything that is linked with it. This simply gives the following perfectly correct graph.</p>
+<h2 id="information-location">Information location</h2>
+<p>Some ideas humans have are self centered or ore generally context centered. For example, let’s say I have the idea the idea ’I am alive’ uses the notion "I" to refer to the one that has it. We might say this is simply a little trick of language and thus unfit to be represented in the "purer counterparts of ideas" that are kirkins. But I do not believe so. Instead, this is in my eyes the occasion to discuss how kirkinplexes can be more or less specific. Indeed, the reference to "I" is in my eyes a property of the kirkinplex used to bind the kirkin. If someone else was to bind the same kirkin in a different kirkinplex this time centered on themselves, they would get a different evaluable kirkin.<br />
+The graph below summarizes the process for me. <span class="math inline"><em>k</em><sub>1</sub></span> is a representation of reality and <span class="math inline"><em>k</em><sub>2</sub></span> is an instantiation of that representation that centers the description on me.</p>
+<p>And the following graph shows what changes if someone else does everything in the same way but centered on himself.</p>
+<p>Another point of interest is the fact that a kirkinplex can give meaning (accept) different kirkins depending on the binding context it is in. Let’s focus on statements. A gain, we take a kirkinplex <span class="math inline"><em>k</em><sub>1</sub></span> that is a representation of the basis of dirt. We also consider a statement <span class="math inline"><em>s</em></span>. So we have a binding context similar to figure <a href="#TruthBindingFigModel" data-reference-type="ref" data-reference="TruthBindingFigModel">[TruthBindingFigModel]</a> and a statement. We intend to bind <span class="math inline"><em>s</em></span> through <span class="math inline"><em>k</em><sub>1</sub></span> using this context. We might be in a situation in which <span class="math inline"><em>s</em></span> would bind in a simpler context only containing <span class="math inline"><em>k</em><sub>1</sub></span> or we might not. Does that change anything ?</p>
+<p>Well if <span class="math inline"><em>s</em></span> turns out to be wrong it might change "how" it is wrong. We might be in the case in which <span class="math inline"><em>s</em></span> is right "for <span class="math inline"><em>k</em><sub>1</sub></span>" (it would bind with only <span class="math inline"><em>k</em><sub>1</sub></span> and be true) but it is the binding of <span class="math inline"><em>k</em><sub>1</sub></span> as a model of the basis that is wrong.<br />
+We might be in the case in which <span class="math inline"><em>s</em></span> is wrong "for <span class="math inline"><em>k</em><sub>1</sub></span>".<br />
+And we might be in the case in which <span class="math inline"><em>s</em></span> can not be realized with only <span class="math inline"><em>k</em><sub>1</sub></span> and we need the context containing the basis to give it meaning.<br />
+The result is the same in all cases but this tells us that kirkinplexes can attempt to contain information themselves or simply be an interface between different layers of the binding context.</p>
+<section class="footnotes" role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn7" role="doc-endnote"><p>Again, I am spoiling future ideas. Remember that officially I never spoke of ideas to this point. Idea is simply a more intuition friendly term than kirkin to get started.<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+</body>
+</html>

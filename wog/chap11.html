@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Simon Coumes" />
+  <title>A collection of wogian thoughts</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      word-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h1 id="ChapBaseModel">The brickwall of the basic model for reality</h1>
+<div class="tcolorbox">
+<p>This chapter loosely assumes that the reader has read chapter <a href="#ChapHumanMind" data-reference-type="ref" data-reference="ChapHumanMind">9</a>.<br />
+Subsection <a href="#ChapBMsubProba" data-reference-type="ref" data-reference="ChapBMsubProba">12.2.2</a> requires a few basic notion in the field of bayesian probabilities.<br />
+Estimated need for active reading : <span class="math inline"> ⋆  ⋆ ⋆</span></p>
+</div>
+<h2 id="the-main-problem">The main problem</h2>
+<p>I have spoken of the nature of truth and meaning in chapter <a href="#ChapTruth" data-reference-type="ref" data-reference="ChapTruth">2</a>, and I have spoken of how I consider the mind to work in chapter <a href="#ChapHumanMind" data-reference-type="ref" data-reference="ChapHumanMind">9</a>. I will speak of rigor and thoughts and reflection in future chapters, both from a normative and descriptive perspective. And I to what I did and will still do without the belief that my work is final or even fundamentally new or revolutionary, I do it as a way to provide answers that are acceptably complete at every step. The aim, you see, is to provide me with the comfort of a satisfactory construction of my mind, resting upon foundations that are if arbitrary than at least stable.</p>
+<p>But I am faced with an issue. Now should be a good time to describe the general basic model used by humans for reality; time, space, the taste of chocolate, the notion of desire and probability, and so on and forth. But I find myself in front of a wall. It is a predictable wall, of the kind I could see coming and that shouldn’t surprise those who have already thought on these matters. But it is a wall nonetheless (metaphorically speaking of course).</p>
+<p>The wall is simply that I cannot provide a model for my vision of things (of reality), for my own thought paradigm, that both satisfies me and doesn’t crumble in abnormal situations. I suspect that the reason for this is simple. The base model used by humans does not account for how incoherent humans thoughts tend to be. In other words, I cannot exhibit the coherent model of reality used by most human thoughts for the simple reason that it doesn’t exist.</p>
+<p>A good exhibit to support that theory might be the notion of desires. As I feel the experiments of section <a href="#ChapBMsecExp" data-reference-type="ref" data-reference="ChapBMsecExp">12.4</a> tend to show, the human process for deciding what we want is much further removed from being based on a simple and foolproof system than we tend to think. By foolproof I of course mean a system that does not "fail", drawing a blank or an hesitation, and not a system that always gives the "right" result.<br />
+I will now give the outline of a base model for reality (section <a href="#ChapBMsecBasic" data-reference-type="ref" data-reference="ChapBMsecBasic">12.2</a>). It is called "the simplest wogian model for reality". Even though it might seem satisfying at a glance, I strongly advise to be cautious before putting large degrees of trust in it. The following sections <a href="#ChapBMsecWrong" data-reference-type="ref" data-reference="ChapBMsecWrong">12.3</a> and <a href="#ChapBMsecExp" data-reference-type="ref" data-reference="ChapBMsecExp">12.4</a> will attempt to speak of the issues with the model.</p>
+<h2 id="ChapBMsecBasic">A basic model</h2>
+<h3 id="the-flow-of-time">The flow of time</h3>
+<p>I expect the reader to find the formulation "flow of time" somewhat too grandiose. I originally intended to simply call it "the sequence of time", but that isn’t much clearer.</p>
+<p>Anyway, the idea remain that I have to introduce time at some point and that point is now. Human minds are time centric, based on notions such as "now" or "after", and so I think it is adapted to start my model of reality with its concept of time.</p>
+<p>I consider time to be linear <a href="#fn26" class="footnote-ref" id="fnref26" role="doc-noteref"><sup>26</sup></a> , an ordered sequence of instants. The sequence is what I call the flow of time. I exist as a human mind evolving with this flow, at least during a portion of it. This means that the time evolution of the mind I am <a href="#fn27" class="footnote-ref" id="fnref27" role="doc-noteref"><sup>27</sup></a> is synchronized, during this interval, with the flow of time. The instants of the flow are not entirely described by the state of my mind. The flow of time follows the evolution through time of "something" (or a set of things) that evolves through time at each instant. That thing is what I call reality.</p>
+<h3 id="ChapBMsubProba">Probabilities</h3>
+<p><span> This subsection to evolve with future considerations on applied Bayesianism.<br />
+</span> I consider the existence of a probability function across an universe and a tribe such that the set of its events includes all events I could consider as true for the sequence. Hence when my senses tell me something I consider I have gained knowledge and continue my considerations regarding the sequence using conditional probabilities. This is the standard use of bayesian probabilities.</p>
+<p>However, this same probability function gives values to events that are not really about the sequence. For example, I assign a probability to the event "1 + 1 = 2" (and it is not 1 either by the way). The events such "space exists" or "I am not hallucinating anything" have a lower value still than "1 + 1 = 2". The former are "highly probable", the later "almost certain".</p>
+<h3 id="desires-and-goals">Desires and goals</h3>
+<p>There are things I want about the sequence. I prefer some state of the sequence over others, and I can believe that some actions (outputs) on my part will influence them. My desires are simply expressed as an utility function over all possible sequences of instants, about which information is often expressed in the form of expected value assuming events. The utility function evolves through time, and has one value per instant.</p>
+<h3 id="starting-the-fill-the-model">Starting the fill the model</h3>
+<p>Some of the basic statements I assign a high probability to are considered as "almost a part of the model". I will now list some of these statements, which helps build the few basic steps I assume to be true.</p>
+<ul>
+<li><p>Space can be approximated as a 3 dimensional <span class="math inline">ℝ</span> vector space, at each instant.</p></li>
+<li><p>There are objects, which occupy a part of space at any given time.</p></li>
+<li><p>The evolution of these objects are subject to laws, which can be approximated by certain laws that are intuitive to me to some degree. <a href="#fn28" class="footnote-ref" id="fnref28" role="doc-noteref"><sup>28</sup></a></p></li>
+<li><p>Things happen in an overall continuous manner.</p></li>
+<li><p>The evolution of my mind is correspondent to the evolution of a set of objects.</p></li>
+<li><p>There are, or at least there can be, other minds in a similar situation as I.</p></li>
+</ul>
+<h2 id="ChapBMsecWrong">What is wrong</h2>
+<p>There are a number of issues with this model. Of course, it is incomplete and very vague, but I am talking about more damning issues than that one.</p>
+<p>First, there is a problem with time. The model considers time as linear, that isn’t even subject to probabilities or an estimation but is simply given as a fact. However, not only am I not certain of that fact, I am all but certain of the contrary. Likewise, my own constant synchronization with time would pose a problem in the context of time travel, which I am perfectly capable of imagining, but shouldn’t be if the model really described how I envision reality.</p>
+<p>Second, the representation of desires and probability is too coherent. More so in the case of desires, this does not account for the fact the human relationship with their goals and desires is often incoherent and downright dishonest.</p>
+<p>Also, the notion of causality is touched upon as a part of the rules, but only indirectly. It is my intuition that there should be something more "direct" on that subject in a better model. But that is more intuition than argument, for indeed I present none of the later. The above sentence pleased me and was true so I wrote it as is. Why not ?</p>
+<h2 id="ChapBMsecExp">Newcomb’s boxes</h2>
+<p>The thought experiment called "the paradox of Newcomb" is summarized as follows. <a href="#fn29" class="footnote-ref" id="fnref29" role="doc-noteref"><sup>29</sup></a><br />
+There is an infallible predictor, a player, and two boxes designated A and B. The player is given a choice between taking only box B, or taking both boxes A and B. The player knows the following:</p>
+<ul>
+<li><p>Box A is clear, and always contains a visible 1,000 euros.</p></li>
+<li><p>Box B is opaque, and its content has already been set by the predictor:</p>
+<ul>
+<li><p>If the predictor has predicted the player will take both boxes A and B, then box B contains nothing.</p></li>
+<li><p>If the predictor has predicted that the player will take only box B, then box B contains 1,000,000 euros.</p></li>
+</ul></li>
+<li><p>The player does not know what the predictor predicted or what box B contains while making the choice.</p></li>
+</ul>
+<p>At a glance, the issue arises in the conflict between two intuitive trains of thought.</p>
+<p>The first says that the past is now set and the content of the boxes fixed. The decision should then simply be made according to our normal usage, and thus you should open both boxes.</p>
+<p>The second says that those who only open box B gain more, hence you should choose to be one of them.</p>
+<p>Of course, this experiment tells us that the way we handle interaction with the world somehow considers predictions as a form of causality. This is however not complete either because the "gain more" choice (take only B) seem counter-intuitive.<br />
+A stronger version arises when we assume that all boxes are transparent. You can see the million, it is right in front of you ! But those who are the kind of people who take only B even when they already see the million are the kind of people who gain more, not the others. Hence, it sounds like it should somewhat make sense to take only B even when you can see a million euros in it, simply because that is the decision taken by those who will win more.<br />
+Of course, the relevance of this section in the context of the current chapter comes from the annoyance at the fact that what I presented in section <a href="#ChapBMsecBasic" data-reference-type="ref" data-reference="ChapBMsecBasic">12.2</a> fails to grasp how this works and should be interpreted.</p>
+<h2 id="whats-next-for-models">What’s next for models ?</h2>
+<p>I will study various models presented by people for various things and devise my owns. They will have to be studied and presented separately, and not as a part of a constructivist attempt to build a satisfying complete base model.</p>
+<section class="footnotes" role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn26" role="doc-endnote"><p>And as we will see in section <a href="#ChapBMsecWrong" data-reference-type="ref" data-reference="ChapBMsecWrong">12.3</a>, that is already a problem.<a href="#fnref26" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn27" role="doc-endnote"><p>see description of the mind, chapter <a href="#ChapHumanMind" data-reference-type="ref" data-reference="ChapHumanMind">9</a><a href="#fnref27" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn28" role="doc-endnote"><p>I will not detail theme here and now, but I do mean the normal laws of physics.<a href="#fnref28" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn29" role="doc-endnote"><p>Description stolen from wikipedia.<a href="#fnref29" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+</body>
+</html>
